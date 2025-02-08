@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- For Font Awesome icons -->
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #080851, #06276a); /* Dark blue gradient */
+            background-attachment: fixed;  /* Make sure the background stays fixed when scrolling */
+            color: #fff;  /* Light text to contrast with the dark background */
+            line-height: 1.6;
+            height: 100vh;
+            overflow-x: hidden;  /* Prevent horizontal scroll */
+        }
+
+        /* Add some texture for a more luxurious feel */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/brick-wall.png'); /* Subtle texture */
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        /* Text Styles */
+        h1, h2, h3, h4, h5, h6 {
+            text-shadow: 2px 2px 10px rgb(233, 225, 12);  /* Soft text shadow for a classier look */
+            font-weight: bold;
+        }
+
+        /* Links */
+        a {
+            color: #ff416c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6b8a;
+            text-decoration: underline;
+        }
+
+        /* Buttons */
+        button {
+            background: #ff416c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #ff6b8a;
+        }
+
+        /* Scrollbar Styles */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #ff416c;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #ff6b8a;
+        }
+
+        /* Container for content */
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Heading */
+        h2 {
+            font-size: 3rem;
+            color: #ffda79;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<section id="welcome" class="welcome-section">
+    <div class="welcome-text">
+        <h1>Welcome to My World</h1>
+        <h2>I'm <span class="highlight">TASFIYA</span></h2>
+        <p>A passionate <span class="glow">Computer Science Student</span> & Web Developer, dedicated to crafting immersive digital experiences.</p>
+        <a href="#about" class="cta-button">Explore More</a>
+    </div>
+    <div class="welcome-image">
+        <img src="your-image.jpg" alt="TASFI">
+    </div>
+</section>
+
+<style>
+    /* Welcome Section */
+    .welcome-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 10%;
+        background: radial-gradient(circle, rgba(1, 1, 34, 0.9), rgb(3, 3, 45));
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .welcome-text {
+        max-width: 50%;
+        animation: fadeInLeft 1s ease-in-out;
+    }
+
+    .welcome-text h1 {
+        font-size: 4rem;
+        color: #00aaff;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 0 0 20px #9900ff;
+    }
+
+    .welcome-text h2 {
+        font-size: 3rem;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .highlight {
+        color: #ffda79;
+        text-shadow: 0 0 15px #ffda79;
+        animation: flicker 1.5s infinite alternate;
+    }
+
+    .glow {
+        color: #65c7f7;
+        text-shadow: 0 0 15px #65c7f7;
+    }
+
+    .cta-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 1.2rem;
+        color: #000;
+        background: #ffda79;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .cta-button:hover {
+        background: #00aaff;
+        color: #fff;
+        box-shadow: 0 0 15px #00aaff;
+        transform: scale(1.1);
+    }
+
+    .welcome-image {
+        max-width: 45%;
+        position: relative;
+        animation: fadeInRight 1s ease-in-out;
+    }
+
+    .welcome-image img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 25px rgba(0, 170, 255, 0.6);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .welcome-image img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px rgba(0, 170, 255, 0.8);
+    }
+
+    /* Animations */
+    @keyframes flicker {
+        0% { opacity: 1; text-shadow: 0 0 10px #ffda79, 0 0 20px #ffda79; }
+        100% { opacity: 0.8; text-shadow: 0 0 15px #ffda79, 0 0 25px #ffda79; }
+    }
+
+    @keyframes fadeInLeft {
+        from { opacity: 0; transform: translateX(-50px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInRight {
+        from { opacity: 0; transform: translateX(50px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        .welcome-section {
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 5%;
+        }
+
+        .welcome-text {
+            max-width: 100%;
+        }
+
+        .welcome-image {
+            max-width: 80%;
+            margin-top: 30px;
+        }
+    }
+</style>
+<nav class="navbar">
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#why-cse">Objective</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#Achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#games">Game Section</a></li>
+    </ul>
+</nav>
+
+<style>
+    /* Navbar Styles */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(135deg, rgba(10, 10, 30, 0.9), rgba(5, 5, 20, 1));
+        padding: 15px 0;
+        text-align: center;
+        z-index: 1000;
+        box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+        animation: neonGlow 1.5s infinite alternate;
+    }
+
+    .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .navbar ul li {
+        display: inline;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        position: relative;
+    }
+
+    .navbar ul li a::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        bottom: 0;
+        left: 50%;
+        background: #00aaff;
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+    .navbar ul li a:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .navbar ul li a:hover {
+        color: #ffda79;
+        text-shadow: 0 0 15px #ffda79;
+        transform: scale(1.1);
+    }
+
+    /* Neon Glow Effect */
+    @keyframes neonGlow {
+        0% { box-shadow: 0 0 15px rgba(0, 170, 255, 0.6); }
+        100% { box-shadow: 0 0 25px rgba(0, 170, 255, 1); }
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 900px) {
+        .navbar ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .navbar ul li a {
+            font-size: 1rem;
+            padding: 8px 15px;
+        }
+    }
+</style>
+<!-- About Me Section -->
+<section id="about-me" class="section">
+    <div class="container">
+        <h2 class="text-center section-title">About Me</h2>
+        
+        <!-- Passionate Innovator Section -->
+        <div class="about-text">
+            <h3>🚀 Passionate Innovator</h3>
+            <p>
+                I am a <span class="highlight">Computer Science enthusiast</span> who thrives on learning and problem-solving.  
+                My mission is to combine <span class="highlight">technology</span> with <span class="highlight">creativity</span> to develop impactful solutions.
+            </p>
+            <p>
+                With an eye for detail and a love for coding, I aim to build <span class="highlight">future-ready applications</span>.
+            </p>
+
+            <!-- 🔥 Glowing Divider -->
+            <div class="glowing-divider"></div>
+
+            <!-- 🔥 Animated Quote -->
+            <p class="motto">"Code today, shape tomorrow!"</p>
+        </div>
+
+        <!-- Info Boxes (Now Below Passionate Innovator) -->
+        <div class="info-boxes">
+            <div class="info-box">
+                <h5>🔥 Visionary Mindset</h5>
+                <p>Turning ideas into reality with <span class="highlight">strategic thinking</span>.</p>
+            </div>
+            <div class="info-box">
+                <h5>📖 Lifelong Learner</h5>
+                <p>Adapting to new technologies and <span class="highlight">embracing change</span>.</p>
+            </div>
+            <div class="info-box">
+                <h5>💡 Team Player</h5>
+                <p>Believing in the power of <span class="highlight">collaboration</span> and innovation.</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* About Me Section Styling */
+        .section-title {
+            font-size: 2.5rem;
+            color: #ffda79;
+            text-shadow: 0 0 15px #ffda79;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-text {
+            background: linear-gradient(135deg, rgba(10, 10, 30, 0.9), rgba(5, 5, 20, 1));
+            border-radius: 15px;
+            color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 20px rgb(2, 153, 228);
+            animation: fadeIn 1.5s ease-in-out;
+            text-align: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: #00aaff;
+            font-weight: 700;
+            text-shadow: 0 0 10px #3c7896;
+        }
+
+        .highlight {
+            color: #ffda79;
+            font-weight: 600;
+            text-shadow: 0 0 15px #ffda79;
+        }
+
+        /* 🔥 Glowing Divider */
+        .glowing-divider {
+            width: 60%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #9308e9, transparent);
+            margin: 15px auto;
+            box-shadow: 0 0 10px #00aaff;
+        }
+
+        /* 🔥 Animated Motto */
+        .motto {
+            font-size: 1.2rem;
+            color: #ffda79;
+            text-shadow: 0 0 10px #ffda79;
+            font-style: italic;
+            animation: fadeIn 2s infinite alternate;
+        }
+
+        /* Info Boxes Now Below */
+        .info-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .info-box {
+            width: 60%;
+            padding: 20px;
+            background: rgba(10, 10, 30, 0.9);
+            border: 2px solid #00aaff;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #fff;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .info-box h5 {
+            font-size: 1.4rem;
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        .info-box:hover {
+            background: #04080a;
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #05fb11;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .info-box {
+                width: 80%;
+            }
+        }
+    </style>
+</section>
+<!-- Why CSE Section -->
+<section id="why-cse" class="section">
+    <div class="container">
+        <h2 class="text-center section-title">Why CSE?</h2>
+        
+        <div class="why-cse-grid">
+            <div class="cse-card">
+                <div class="cse-icon">💻</div>
+                <h5>Shaping the Future</h5>
+                <p>Computer Science lays the foundation for groundbreaking innovations that transform industries.</p>
+            </div>
+            <div class="cse-card">
+                <div class="cse-icon">🚀</div>
+                <h5>Global Connectivity</h5>
+                <p>It connects the world, enabling seamless communication and collaboration across borders.</p>
+            </div>
+            <div class="cse-card">
+                <div class="cse-icon">⚡</div>
+                <h5>Endless Creativity</h5>
+                <p>With CSE, you can turn imaginative ideas into functional and impactful solutions.</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Section Title */
+        .section-title {
+            font-size: 2.5rem;
+            color: #ffda79;
+            text-shadow: 0 0 15px #ffda79;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Grid Layout */
+        .why-cse-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        /* Classy Glassmorphism-Inspired Cards */
+        .cse-card {
+            width: 300px;
+            padding: 2rem;
+            background: rgba(20, 20, 50, 0.85);
+            border-radius: 15px;
+            border: 2px solid rgba(0, 170, 255, 0.5);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(4, 98, 146, 0.935);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1s ease-out;
+            color: #fff;
+        }
+
+        /* Hover Effects */
+        .cse-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px #0a6b9c;
+            background: rgba(0, 10, 50, 0.9);
+        }
+
+        /* Card Title */
+        .cse-card h5 {
+            font-weight: 800;
+            margin-top: 1rem;
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+            font-size: 1.4rem;
+        }
+
+        /* Card Text */
+        .cse-card p {
+            font-size: 1rem;
+            color: #ddd;
+            margin-top: 10px;
+        }
+
+        /* Icon Styling */
+        .cse-icon {
+            font-size: 3.5rem;
+            color: #00aaff;
+            text-shadow: 0 0 15px #00aaff;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .why-cse-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</section>
+<!-- Education Section -->
+<section id="education" class="section">
+    <div class="container">
+        <h2 class="text-center section-title">Education</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-date">2023 - Present</div>
+                <div class="education-content">
+                    <h4>Bachelor of Science in Computer Science</h4>
+                    <p>Premier University, CTG</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-date">2020 - 2023</div>
+                <div class="education-content">
+                    <h4>Higher Secondary Certificate</h4>
+                    <p>AT Govt College, Boalkhali</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-date">2018 - 2020</div>
+                <div class="education-content">
+                    <h4>Secondary School Certificate</h4>
+                    <p>Dilowara Jahan School, CTG</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Section Styling */
+        #education {
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #020230, #121260);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #ffda79;
+            text-shadow: 0 0 15px #ffda79;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Timeline Structure */
+        .education-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            position: relative;
+            margin-top: 2rem;
+            padding-left: 2rem;
+        }
+
+        /* Individual Timeline Items */
+        .education-item {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .education-item:hover {
+            transform: scale(1.03);
+        }
+
+        /* Date Styling */
+        .education-date {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #00aaff;
+            flex-shrink: 0;
+            width: 140px;
+            text-align: right;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Content Box */
+        .education-content {
+            background: rgb(3, 3, 68);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 2px solid rgba(0, 170, 255, 0.5);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgb(2, 138, 201);
+            flex-grow: 1;
+            transition: all 0.3s ease-in-out;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        .education-content:hover {
+            background: rgba(9, 57, 152, 0.95);
+            box-shadow: 0 0 20px #065075;
+        }
+
+        .education-content h4 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #010711;
+            text-shadow: 0 0 10px #00aaff;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-content p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        /* Glowing Dots on Timeline */
+        .education-item::before {
+            content: '';
+            position: absolute;
+            left: 115px;
+            top: 10px;
+            width: 15px;
+            height: 15px;
+            background: #043a56;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #055a84, 0 0 30px #00aaff;
+        }
+
+        /* Vertical Timeline Line */
+        .education-timeline::before {
+            content: '';
+            position: absolute;
+            left: 123px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #00aaff, #0044aa);
+            box-shadow: 0 0 10px #00aaff;
+        }
+
+        /* Animations */
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .education-timeline {
+                padding-left: 0;
+                align-items: center;
+            }
+
+            .education-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .education-date {
+                text-align: center;
+                width: auto;
+            }
+
+            .education-item::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .education-timeline::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="section skills">
+    <div class="container">
+        <h2 class="text-center section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skills-category">
+                <h5>Programming</h5>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <span class="skill-label">JavaScript - 50%</span>
+                        <div class="progress-fill" style="width: 50%"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill-label">Python - 40%</span>
+                        <div class="progress-fill" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h5>Web Development</h5>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <span class="skill-label">HTML/CSS - 50%</span>
+                        <div class="progress-fill" style="width: 50%"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill-label">Bootstrap - 55%</span>
+                        <div class="progress-fill" style="width: 55%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Section Styling */
+        #skills {
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #02024d, #010149);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #ffda79;
+            text-shadow: 0 0 15px #e4b642;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .skills-category {
+            flex: 1;
+            min-width: 280px;
+            background: rgba(3, 3, 87, 0.85);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 170, 255, 0.5);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(3, 146, 218, 0.938);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skills-category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00aaff;
+        }
+
+        .skills-category h5 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .progress-bar {
+            position: relative;
+            width: 100%;
+            height: 30px;
+            background: rgba(29, 4, 126, 0.839);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(to right, #061f2b, #0044aa);
+            box-shadow: 0 0 20px #00aaff;
+            border-radius: 15px;
+            transition: width 1s ease-in-out;
+        }
+
+        .progress-bar:hover .progress-fill {
+            filter: brightness(1.3);
+        }
+
+        /* Skill Labels */
+        .skill-label {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 0 0 5px #0b4c74;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .skills-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">
+                        <h5>Personal Portfolio</h5>
+                        <p>A modern, responsive portfolio website.</p>
+                    </div>
+                    <div class="project-back">
+                        <p>Created using HTML, CSS, and Bootstrap to showcase skills and projects effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">
+                        <h5>E-commerce Platform</h5>
+                        <p>A dynamic online store platform.</p>
+                    </div>
+                    <div class="project-back">
+                        <p>Built with JavaScript and Python, featuring cart functionality and secure payment integration.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">
+                        <h5>AI Chatbot</h5>
+                        <p>An intelligent customer service chatbot.</p>
+                    </div>
+                    <div class="project-back">
+                        <p>Developed using Python and NLP, capable of natural conversations and task automation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+            perspective: 1000px;
+        }
+        .project-inner {
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s ease-in-out;
+        }
+        .project-card:hover .project-inner {
+            transform: rotateY(180deg);
+        }
+        .project-front, .project-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backface-visibility: hidden;
+            background: #020253;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgb(32, 168, 236);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .project-card:hover .project-front, .project-card:hover .project-back {
+            box-shadow: 0 15px 30px rgb(156, 10, 235);
+        }
+        .project-back {
+            transform: rotateY(180deg);
+        }
+        h5 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #42aaff; /* Dark blue with a futuristic vibe */
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #42aaff, 0 0 20px #42aaff;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #b0c0d3;
+            transition: color 0.3s ease;
+        }
+        .project-card:hover .project-front p, .project-card:hover .project-back p {
+            color: #ffffff;
+        }
+        .project-grid .project-card {
+            animation: highlight 2s infinite alternate;
+        }
+        @keyframes highlight {
+            0% {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            }
+            100% {
+                box-shadow: 0 10px 25px rgba(66, 170, 255, 0.8); /* Blue highlight animation */
+            }
+        }
+    </style>
+</section>
+<style>
+    <!-- About Me Section -->
+<section id="about-me" class="section">
+    <div class="container">
+        <h2 class="text-center section-title">About Me</h2>
+        <div class="row align-items-center about-me-section">
+            <!-- Left Side: Info Boxes -->
+            <div class="col-lg-5 p-4">
+                <div class="info-boxes">
+                    <div class="info-box">
+                        <h5>🔥 Visionary Mindset</h5>
+                        <p>Turning ideas into reality with <span class="highlight">strategic thinking</span>.</p>
+                    </div>
+                    <div class="info-box">
+                        <h5>📖 Lifelong Learner</h5>
+                        <p>Adapting to new technologies and <span class="highlight">embracing change</span>.</p>
+                    </div>
+                    <div class="info-box">
+                        <h5>💡 Team Player</h5>
+                        <p>Believing in the power of <span class="highlight">collaboration</span> and innovation.</p>
+                    </div>
+                </div>
+                <!-- Passionate Innovator Text Slightly Lower -->
+                <div class="passionate-innovator">
+                    <h3>🚀 Passionate Innovator</h3>
+                </div>
+            </div>
+
+            <!-- Right Side: About Text -->
+            <div class="col-lg-7 p-4">
+                <div class="about-text">
+                    <p>
+                        I am a <span class="highlight">Computer Science enthusiast</span> who thrives on learning and problem-solving.  
+                        My mission is to combine <span class="highlight">technology</span> with <span class="highlight">creativity</span> to develop impactful solutions.
+                    </p>
+                    <p>
+                        With an eye for detail and a love for coding, I aim to build <span class="highlight">future-ready applications</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* About Me Section Styling */
+        .section-title {
+            font-size: 2.5rem;
+            color: #ffda79;
+            text-shadow: 0 0 15px #ffda79;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-me-section {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-text {
+            background: linear-gradient(135deg, rgba(10, 10, 30, 0.9), rgba(5, 5, 20, 1));
+            border-radius: 15px;
+            color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .highlight {
+            color: #ffda79;
+            font-weight: 600;
+            text-shadow: 0 0 15px #ffda79;
+        }
+
+        /* Passionate Innovator (Lowered Position) */
+        .passionate-innovator {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .passionate-innovator h3 {
+            font-size: 1.8rem;
+            color: #00aaff;
+            font-weight: 700;
+            text-shadow: 0 0 10px #00aaff;
+            background: linear-gradient(45deg, #1e1e2f, #2a2a42);
+            padding: 10px 15px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px #00aaff;
+        }
+
+        /* Info Box Styling */
+        .info-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-box {
+            padding: 20px;
+            background: rgba(10, 10, 30, 0.9);
+            border: 2px solid #00aaff;
+            border-radius: 12px;
+            transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+            color: #fff;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .info-box h5 {
+            font-size: 1.4rem;
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        .info-box:hover {
+            background: rgba(0, 170, 255, 0.2);
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00aaff;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .about-me-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .passionate-innovator {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</section>
+
+<section id="Achievements" class="skills">
+    <h2>Achievements</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;">90%</div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Programming</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;">85%</div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>Database Management</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-tools"></i>
+            <h3>MS Office</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 95%;">95%</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Achievements Section */
+    .skills {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #040451, #062772);
+        border-radius: 20px;
+        max-width: 900px;
+        margin: auto;
+        box-shadow: 0 10px 30px rgba(6, 153, 211, 0.952);
+        animation: fadeIn 1s ease-out;
+    }
+
+    .skills h2 {
+        font-size: 3rem;
+        color: #ffda79;
+        margin-bottom: 30px;
+        text-shadow: 0 4px 10px rgb(4, 168, 193);
+        font-weight: bold;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .skill-card {
+        background: rgb(28, 1, 70);
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out, background 0.3s, box-shadow 0.3s ease;
+        box-shadow: 0 4px 15px rgb(255, 217, 121);
+        cursor: pointer;
+        opacity: 0;
+        animation: fadeInCard 0.8s ease-in-out forwards;
+    }
+
+    .skill-card:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .skill-card:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    .skill-card:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    .skill-card:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+
+    .skill-card:hover {
+        transform: scale(1.1);
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 10px 30px rgb(188, 137, 9);
+    }
+
+    .skill-card i {
+        font-size: 3rem;
+        color: #ffda79;
+        margin-bottom: 15px;
+        transition: color 0.3s ease;
+    }
+
+    .skill-card:hover i {
+        color: #ff6b8a;
+    }
+
+    .skill-card h3 {
+        font-size: 1.6rem;
+        color: #fff;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 15px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .progress {
+        height: 100%;
+        background: linear-gradient(90deg, #ffda79, #65c7f7);
+        border-radius: 10px;
+        text-align: right;
+        padding-right: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #000;
+        line-height: 15px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        transition: width 1.5s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInCard {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .skills-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+
+
+<!-- Hobbies Section -->
+<section id="hobbies" class="section">
+    <div class="container">
+        <h2 class="text-center">My Hobbies</h2>
+        <div class="hobbies-carousel">
+            <div class="hobby-card" id="hobby-card-1">
+                <h3>Gaming</h3>
+                <p>I love immersing myself in virtual worlds, testing my skills, and enjoying competitive challenges.</p>
+            </div>
+            <div class="hobby-card" id="hobby-card-2">
+                <h3>Photography</h3>
+                <p>Capturing moments through the lens is my way of preserving memories and exploring creativity.</p>
+            </div>
+            <div class="hobby-card" id="hobby-card-3">
+                <h3>Traveling</h3>
+                <p>Exploring new places and experiencing diverse cultures inspires and broadens my perspective.</p>
+            </div>
+            <div class="hobby-card" id="hobby-card-4">
+                <h3>Reading</h3>
+                <p>Diving into books enriches my knowledge, sharpens my mind, and fuels my imagination.</p>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="prev" onclick="prevHobby()">&#10094;</button>
+            <button class="next" onclick="nextHobby()">&#10095;</button>
+        </div>
+    </div>
+    <style>
+        #hobbies {
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #040434, #04043a);
+            color: #fff;
+        }
+
+        .hobbies-carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .hobby-card {
+            min-width: 100%;
+            max-width: 100%;
+            background: #06066a;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgb(19, 180, 220);
+            transition: transform 0.5s ease, opacity 0.5s ease;
+            position: absolute;
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        .hobby-card.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .hobby-card.previous {
+            transform: translateX(-100%);
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .carousel-controls button {
+            background: #7e09d7;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .carousel-controls button:hover {
+            background: #ff6b8a;
+        }
+    </style>
+    <script>
+        let currentHobby = 0;
+        const hobbies = document.querySelectorAll('.hobby-card');
+
+        function updateHobby() {
+            hobbies.forEach((card, index) => {
+                card.classList.remove('active', 'previous');
+                if (index === currentHobby) {
+                    card.classList.add('active');
+                } else if (index === (currentHobby - 1 + hobbies.length) % hobbies.length) {
+                    card.classList.add('previous');
+                }
+            });
+        }
+
+        function nextHobby() {
+            currentHobby = (currentHobby + 1) % hobbies.length;
+            updateHobby();
+        }
+
+        function prevHobby() {
+            currentHobby = (currentHobby - 1 + hobbies.length) % hobbies.length;
+            updateHobby();
+        }
+
+        // Initialize
+        updateHobby();
+    </script>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Get in Touch</h4>
+                <p>If you have any questions or would like to collaborate, feel free to reach out to me. I'd love to hear from you!</p>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> example@example.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> New York, USA</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <style>
+        #contact {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #0c0a4c, #040440);
+            color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(4, 103, 160, 0.846);
+        }
+
+        .contact-content {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-form-container {
+            width: 100%;
+            max-width: 800px;
+            background: #040458;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(13, 138, 216, 0.984);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1655d2;
+        }
+
+        input, textarea {
+            padding: 1rem;
+            background: #2b2b70;
+            color: #fff;
+            border: 1px solid #1d1d87;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #920fe4;
+            box-shadow: 0 0 10px rgba(23, 147, 219, 0.904);
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .submit-btn {
+            background: #2831df;
+            border: none;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            background: #1c3ed4;
+            transform: scale(1.05);
+        }
+
+        .submit-btn:active {
+            background: #882de3;
+            transform: scale(1);
+        }
+
+        .contact-info {
+            text-align: center;
+            max-width: 500px;
+            color: #ddd;
+        }
+
+        .contact-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #41ecff;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info ul li i {
+            margin-right: 0.5rem;
+            color: #5441ff;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Section</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body {
+            background-color: #0a0f1e;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .game-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .game-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #a17ffb;
+            text-shadow: 0 0 15px #7d5cfb;
+            margin-bottom: 30px;
+        }
+        .game-card {
+            background: linear-gradient(135deg, #0d1b3e, #192655);
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            box-shadow: 0 0 15px rgba(129, 80, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(129, 80, 255, 0.6);
+        }
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+            transition: opacity 0.3s;
+        }
+        .game-card iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .game-card:hover img {
+            opacity: 0;
+        }
+        .game-card:hover iframe {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="game-section">
+        <div class="container">
+            <h2 class="game-title">My Game Collection</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/400x300/7d5cfb/ffffff?text=Slope" alt="Slope Game">
+                        <iframe src="https://www.crazygames.com/embed/slope" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/400x300/a17ffb/ffffff?text=2048" alt="2048 Game">
+                        <iframe src="https://www.crazygames.com/embed/2048" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/400x300/5c3cfb/ffffff?text=Moto+X3M" alt="Moto X3M Game">
+                        <iframe src="https://www.crazygames.com/embed/moto-x3m" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
